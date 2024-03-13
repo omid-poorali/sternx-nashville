@@ -1,5 +1,5 @@
 import helmet from 'helmet';
-import compression from 'compression';
+import * as compression from 'compression';
 import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { ValidationPipe } from '@nestjs/common';

@@ -1,0 +1,28 @@
+### create user post file
+POST http://localhost:8080/tasks HTTP/1.1
+Content-Type:  application/json
+
+{
+   "parentId": null,
+   "title": "title",
+   "description": "description"
+}
+
+
+### update user post file
+PATCH  http://localhost:8080/tasks HTTP/1.1
+Content-Type:  application/json
+
+{
+   "id": "",
+   "title": "updated title",
+   "description": "updated description"
+}
+
+### delete user post file
+DELETE  http://localhost:8080/tasks HTTP/1.1
+Content-Type:  application/json
+
+{
+    "id": "",
+}
