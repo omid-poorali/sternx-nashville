@@ -15,7 +15,7 @@ import { TasksService } from './tasks.service';
           options: {
             package: 'tasks',
             protoPath: ['src/proto/tasks.proto'],
-            url: `${configService.get<string>('GRPC_ENDPOINT')}`,
+            url: `${configService.get<string>('GRPC_URI')}`,
           },
         }),
         inject: [ConfigService],
